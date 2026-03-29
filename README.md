@@ -15,7 +15,6 @@ Frontend Repo: https://github.com/STEM-Girlie/ToDo-List
 - [Database Design](#database-design)
 - [API Endpoints](#api-endpoints)
 - [Installation](#installation)
-- [Environment Variables](#environment-variables)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
 - [Deployment](#deployment)
@@ -56,18 +55,22 @@ Provide a simple, intuitive tool for users to track tasks while demonstrating cl
 - GitHub Pages (Deployment)
 
 ## Architecture
+```
 Client (Browser)
 ↓
 JavaScript Logic (DOM Manipulation)
 ↓
 Local Rendering of Tasks
+```
 
 ### Folder Structure:
+```
   ToDo-List/
  ├── index.html
  ├── style.css
  ├── script.js
  └── images/
+```
 
 ## Database Design
 This project does not use a database.
@@ -78,8 +81,10 @@ This project does not include a backend or API.
 
 ## Installation
 ### Clone the Repository
+```
 git clone https://github.com/STEM-Girlie/ToDo-List.git
 cd ToDo-List
+```
 
 No dependencies are required — this is purely a front‑end project.
 
@@ -90,10 +95,12 @@ No dependencies are required — this is purely a front‑end project.
 4. Mark tasks as complete or delete them
 
 ## Screenshots
+```
 assets/
  ├── homepage.png
  └── tasklist.png
  └── completedtasks.png
+```
 
 
  ![Home Page](assets/homepage.png)

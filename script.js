@@ -1,5 +1,4 @@
 const inputBox = document.getElementById("input-box");
-
 const listContainer = document.getElementById("list-container");
 
 function addTask() {
@@ -9,6 +8,7 @@ function addTask() {
     let li = document.createElement("li");
     li.innerHTML = inputBox.value;
     listContainer.appendChild(li);
+
     let span = document.createElement("span");
     span.innerHTML = "\u00d7";
     li.appendChild(span);
@@ -16,11 +16,13 @@ function addTask() {
   inputBox.value = "";
 }
 
+
 inputBox.addEventListener("keydown", function (e) {
   if (e.key === "Enter") {
     e.preventDefault();
     addTask();
   }
+});
 
 listContainer.addEventListener("click", function (e) {
   if (e.target.tagName === "LI") {
@@ -29,4 +31,3 @@ listContainer.addEventListener("click", function (e) {
     e.target.parentElement.remove();
   }
 });
-

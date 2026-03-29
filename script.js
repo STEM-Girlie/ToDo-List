@@ -16,13 +16,13 @@ function addTask() {
   inputBox.value = "";
 }
 
-
 inputBox.addEventListener("keydown", function (e) {
   if (e.key === "Enter") {
     e.preventDefault();
     addTask();
   }
-});
+}); 
+
 
 listContainer.addEventListener("click", function (e) {
   if (e.target.tagName === "LI") {

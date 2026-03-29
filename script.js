@@ -16,8 +16,9 @@ function addTask() {
   inputBox.value = "";
 }
 
-inputBox.addEventListener("keypress", function (e) {
+inputBox.addEventListener("keydown", function (e) {
   if (e.key === "Enter") {
+    e.preventDefault();
     addTask();
   }
 
